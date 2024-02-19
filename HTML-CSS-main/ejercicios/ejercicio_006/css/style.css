@@ -1,0 +1,12 @@
+button:hover{
+    background-color: green;
+    color: white;
+ }
+button.comillas::after{
+    content: '"Pasa por encima"';
+}
+button.comillas:hover:after{
+    content: '"¡Hecho!"';
+    
+}
+

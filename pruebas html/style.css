@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    display:ruby;
+}
+body{
+    background: #292929;
+    font-family: "calibri";
+}
+header {
+    background: #03A9F4;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    
+}
+footer {
+    background: #ec03f4;
+    width: 100%;
+    clear: both;
+    content: "";
+   display: table;
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+img {
+    width: 800px;
+    float:inline-start; 
+    padding: auto;
+}
+nav{
+    float:right; 
+}
+nav ul li {
+    list-style: none;
+    margin-left:  75px;
+    padding: 25px;
+    float: left;
+}
+.footer{
+    width: 300px;
+    margin: 0 auto;
+}
+div ul {
+    list-style: none;
+    margin-left:  75px;
+    padding: 25px;
+    float: left;
+}

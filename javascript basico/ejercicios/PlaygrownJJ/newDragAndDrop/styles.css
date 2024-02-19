@@ -1,0 +1,25 @@
+.contenedor{
+    background-color: rgb(9, 31, 24);
+    margin: 1rem;
+    padding: 1rem;
+}
+.parrafo{
+    background-color: aquamarine;
+    margin: 1rem;
+    padding: 1rem;
+}
+.dragged{
+    opacity: 0.3;
+}
+.trash {
+    background-color: red;
+    margin: 1rem;
+    padding: 1rem;
+    height: 6rem;
+}
+.createParrafo {
+    background-color: blue;
+    margin: 1rem;
+    padding: 1rem;
+    color: white
+}

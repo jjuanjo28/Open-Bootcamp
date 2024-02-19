@@ -1,0 +1,13 @@
+.container{
+    background-color: blue;
+    padding: 1rem;
+    margin: 1rem;
+}
+.arrastre{
+    background-color: antiquewhite;
+    padding: 1rem;
+    margin: 1rem;
+}
+.dragging{
+    opacity: 0.3;
+}

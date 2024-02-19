@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>drag and drop</title>
+  </head>
+  <body>
+    <div class="general-container">
+      <div>
+        <img
+          class="trash-box"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0d/User-trash.svg"
+          alt="trash-box"
+        />
+        <div>
+          <button class="clear-trash " onclick="clearTrash()">
+            clear trash
+          </button>
+        </div>
+      </div>
+
+      <div class="crear-tarea">
+        <script type="text/javascript">
+          function validar(e) {
+            tecla = document.all ? e.keyCode : e.which;
+            if (tecla == 13) crearTarea();
+          }
+        </script>
+        <input
+          type="text"
+          id="nueva-tarea"
+          size="60"
+          onkeypress="validar(event)"
+        />
+
+        <button class="boton-nueva-tarea " type="submit" onclick="crearTarea()">
+          Nueva Tarea
+        </button>
+      </div>
+
+      <div class="contenedor">
+        <button style="background-color: rgb(0, 255, 204); border-radius: 5px;" class="restore">Restore Button</button>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

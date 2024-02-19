@@ -1,0 +1,44 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  text-decoration: underline;
+}
+.cruz {
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 80px;
+    background-color: red;
+    margin-top: 10px;
+  }
+  .cruz::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    left: -30px;
+    background-color: red;
+    top: 30px;
+    width: 80px;
+  }
+  .cruz{
+    transform: rotate(45deg)
+  }
+  button{
+    margin-top: 20px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    transition: 400ms;
+  }
+  .boton:hover{
+    color: white;
+     transform: translateX(-5px) translateY(3px);
+     background-color: rgb(83, 160, 134);
+     box-shadow: 0 5px 10px greenyellow;
+  }

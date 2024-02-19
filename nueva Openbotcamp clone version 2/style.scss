@@ -1,0 +1,336 @@
+////// variables de color ////////////////////////
+$color-verde-bootcamp: #20ded3;
+////     mixines  //////////////////////////////
+@mixin boton-negro {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 10px;
+
+  &:hover {
+    cursor: pointer;
+    transition: 0.4s all;
+    background-color: darkgray;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+  img {
+    margin-left: 50px;
+    height: 150%;
+  }
+  .contenidos {
+    a {
+      padding: 12px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: $color-verde-bootcamp;
+      }
+    }
+  }
+  .btn-negro {
+    @include boton-negro();
+  }
+  .btn-verde {
+    background: linear-gradient(to right, #4defa7, #20ded3);
+    @include boton-negro();
+  }
+  .icono {
+    display: none;
+  }
+}
+.divisor {
+  display: flex;
+  padding-top: 65px;
+  width: 100vw;
+  height: 550px;
+
+
+  .cuadro {
+    width: 60vw;
+    .foto-1 {
+      position: relative;
+      margin-left: 80px;
+      padding-top: 45px;
+      height: 500px;
+      .mostradores {
+        background-color: #4defa7;
+        width: 150px;
+      }
+    }
+    .mostradores {
+      position: relative;
+      display: flex;
+      margin: 10px;
+      height: 60px;
+      border-radius: 15px;
+      text-align: center;
+      flex-direction: column;
+      font-family: sans-serif;
+      font-size: 0.9rem;
+      box-shadow: 1px 1px 10px grey;
+      align-items: center;
+      background-color: white;
+      .icono {
+        display: flex;
+        border-radius: 20px;
+        width: 32px;
+        height: 32px;
+        margin-top: 7px;
+        margin-left: 3px;
+        #ico {
+          width: 70%;
+          height: 70%;
+        }
+      }
+      #verde {
+        margin-right: 150px;
+        background-color: #4defa7;
+        border: 5px solid #abf2d0;
+      }
+      #lila {
+        margin-right: 128px;
+        background-color: #8567db;
+        border: 5px solid #d8c1e2;
+      }
+      #aqua {
+        position: absolute;
+        right: 12px;
+        background-color: #1fddd2;
+        border: 5px solid #8becec;
+      }
+      #sin-compromisos {
+        position: absolute;
+        right: 10px;
+      }
+    }
+    #uno {
+      position: absolute;
+      width: 10rem;
+      left: 22rem;
+      top: 25rem;
+      h3 {
+        margin-right: 15px;
+      }
+    }
+    #dos {
+      position: absolute;
+      top: 30.5em;
+      left: 105px;
+      width: 13rem;
+    }
+    #tres {
+      position: absolute;
+      top: 37em;
+      left: 13em;
+      width: 12rem;
+    }
+    #a-tu-ritmo {
+      position: absolute;
+      right: 3rem;
+      top: 3%;
+    }
+    #sin-compromisos {
+      position: absolute;
+      right: 15px;
+      top: 3%;
+    }
+    #personalizable {
+      position: absolute;
+      right: 15px;
+      top: 3%;
+    }
+    #ico {
+      margin: 0;
+      margin-top: 5px;
+      margin-left: 4px;
+      width: 13px;
+      height: 13px;
+      z-index: 1;
+    }
+  }
+  .divisor-derecha {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: space-around;
+    margin-left: -160px;
+        
+    h1 {
+        
+      margin-top: 120px;
+      width: 43vw;
+      font-size: 3.2rem;
+      #multicolor {
+        background: linear-gradient(to right, #4defa7, #2b95ff);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+    }
+    p {
+      margin-top: -150px;
+      width: 33vw;
+      margin-bottom: 0px;
+      color: rgb(78, 78, 78);
+    }
+    .btn-interno {
+      @include boton-negro();
+      margin-top: -90px;
+      margin-left: -1px;
+      height: 50px;
+      width: 145px;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////
+/// Responsive area ////////////////////////////////////
+/// ////////////////////////////////////////////////////
+//
+@media (max-width: 1200px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    #contenidos-generales {
+      display: none;
+    }
+    .icono {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+    .contenidos-expandibles {
+      margin-left: 110px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 630px;
+    }
+  }
+  .barra-navegadora {
+    .imagen-logo {
+      position: absolute;
+      left: 10px;
+    }
+    .contenidos-expandibles{
+      display: none;
+    }
+    // .contenidos-expandibles {
+    //   .icono {
+    //     img {
+    //       position: absolute;
+    //       height: 35px;
+    //       right: 55px;
+    //     }
+    //   }
+    // }
+  }
+  .divisor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+}
+
+@media (max-width: 1450px) {
+  .divisor {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 800px;
+
+    .foto-1 {
+      padding: 5px;
+    }
+    .cuadro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: red;
+
+     
+      .foto-1 {
+        margin-top: 150px;
+        margin-left: 200px;
+      }
+
+      // #uno {
+
+      //   top: 590px;
+      //   left: 770px;
+      // }
+      // #dos {
+      //   top: 620px;
+      //   left: 515px;
+      // }
+      // #tres {
+      //   top: 700px;
+      //   left: 585px;
+      // }
+    }
+
+    .divisor-derecha {
+      background-color: #2b95ff;
+      margin-top: 100px;
+      height: 0px;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      padding: auto;
+      justify-content: space-around;
+      margin-left: 100px;
+      text-align: center;
+      p {
+        
+        width: 80vw;
+        color: #5b5b5b;
+        margin-top: -10px;
+       
+      }
+      h1 {
+        width: 80vw;
+        font-family: Inter, sans-serif;
+        font-size: 2rem;
+        margin: 15px;
+        margin-top: 2rem;
+        font-size: 3.5rem;text-align: center;
+        #multicolor {
+          background: linear-gradient(to right, #4defa7, #2b95ff);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
+      }
+
+      .btn-interno {
+        @include boton-negro();
+        margin-top: 30px;
+        margin-left: -1px;
+        width: 126px;
+        height: 5rem;
+      }
+    }
+  }
+}

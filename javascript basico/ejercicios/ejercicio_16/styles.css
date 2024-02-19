@@ -1,0 +1,77 @@
+body {
+  background-image: url("https://www.solofondos.com/wp-content/uploads/2015/11/bge02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor {
+  background-color: #33ff93;
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.parrafo {
+  background-color: aliceblue;
+  margin: 1rem;
+  padding: 1rem;
+}
+.dragged {
+  opacity: 0.3;
+}
+.trash-box {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin-left: 12px;
+}
+input {
+  display: block;
+  width: 85%;
+  border: none;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+.tarea-completada {
+  background-color: darkgray;
+  color: rgb(255, 255, 255);
+}
+
+.completa-tarea {
+  display: inline-block;
+  position: absolute;
+  right: 150px;
+}
+
+.crear-tarea {
+  background-color: greenyellow;
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.boton-nueva-tarea {
+  background-color: rgb(0, 255, 204);
+  border-radius: 5px;
+  display: flex;
+  position: absolute;
+  right: 7.5rem;
+  margin-top: -1.65rem;
+  margin-right: -0.5rem;
+ 
+}
+.clear-trash{
+  background-color: rgb(0, 255, 204);
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+  margin-top: 60px;
+}
+.completa-tarea{
+  border-radius: 5px;
+  background-color: rgb(0, 255, 204)
+};
+
+
+

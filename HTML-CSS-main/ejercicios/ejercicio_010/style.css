@@ -1,0 +1,43 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    font-size: 2rem;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+.padre{
+    display: flex;
+ }
+.divisor{
+    background-color: red;
+    padding: 10px;
+    height: 70px;
+    margin: 10px
+}
+.principal{
+   
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 640px){
+.padre{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.principal{
+    height: 40rem;
+}
+
+}

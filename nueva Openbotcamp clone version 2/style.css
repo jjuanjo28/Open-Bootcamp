@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+}
+nav img {
+  margin-left: 50px;
+  height: 150%;
+}
+nav .contenidos a {
+  padding: 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+nav .contenidos a:hover {
+  color: #20ded3;
+}
+nav .btn-negro {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 10px;
+}
+nav .btn-negro:hover {
+  cursor: pointer;
+  transition: 0.4s all;
+  background-color: darkgray;
+}
+nav .btn-verde {
+  background: linear-gradient(to right, #4defa7, #20ded3);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 10px;
+}
+nav .btn-verde:hover {
+  cursor: pointer;
+  transition: 0.4s all;
+  background-color: darkgray;
+}
+nav .icono {
+  display: none;
+}
+
+.divisor {
+  display: flex;
+  padding-top: 65px;
+  width: 100vw;
+  height: 550px;
+}
+.divisor .cuadro {
+  width: 60vw;
+}
+.divisor .cuadro .foto-1 {
+  position: relative;
+  margin-left: 80px;
+  padding-top: 45px;
+  height: 500px;
+}
+.divisor .cuadro .foto-1 .mostradores {
+  background-color: #4defa7;
+  width: 150px;
+}
+.divisor .cuadro .mostradores {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  height: 60px;
+  border-radius: 15px;
+  text-align: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  box-shadow: 1px 1px 10px grey;
+  align-items: center;
+  background-color: white;
+}
+.divisor .cuadro .mostradores .icono {
+  display: flex;
+  border-radius: 20px;
+  width: 32px;
+  height: 32px;
+  margin-top: 7px;
+  margin-left: 3px;
+}
+.divisor .cuadro .mostradores .icono #ico {
+  width: 70%;
+  height: 70%;
+}
+.divisor .cuadro .mostradores #verde {
+  margin-right: 150px;
+  background-color: #4defa7;
+  border: 5px solid #abf2d0;
+}
+.divisor .cuadro .mostradores #lila {
+  margin-right: 128px;
+  background-color: #8567db;
+  border: 5px solid #d8c1e2;
+}
+.divisor .cuadro .mostradores #aqua {
+  position: absolute;
+  right: 12px;
+  background-color: #1fddd2;
+  border: 5px solid #8becec;
+}
+.divisor .cuadro .mostradores #sin-compromisos {
+  position: absolute;
+  right: 10px;
+}
+.divisor .cuadro #uno {
+  position: absolute;
+  width: 10rem;
+  left: 22rem;
+  top: 25rem;
+}
+.divisor .cuadro #uno h3 {
+  margin-right: 15px;
+}
+.divisor .cuadro #dos {
+  position: absolute;
+  top: 30.5em;
+  left: 105px;
+  width: 13rem;
+}
+.divisor .cuadro #tres {
+  position: absolute;
+  top: 37em;
+  left: 13em;
+  width: 12rem;
+}
+.divisor .cuadro #a-tu-ritmo {
+  position: absolute;
+  right: 3rem;
+  top: 3%;
+}
+.divisor .cuadro #sin-compromisos {
+  position: absolute;
+  right: 15px;
+  top: 3%;
+}
+.divisor .cuadro #personalizable {
+  position: absolute;
+  right: 15px;
+  top: 3%;
+}
+.divisor .cuadro #ico {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 4px;
+  width: 13px;
+  height: 13px;
+  z-index: 1;
+}
+.divisor .divisor-derecha {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: space-around;
+  margin-left: -160px;
+}
+.divisor .divisor-derecha h1 {
+  margin-top: 120px;
+  width: 43vw;
+  font-size: 3.2rem;
+}
+.divisor .divisor-derecha h1 #multicolor {
+  background: linear-gradient(to right, #4defa7, #2b95ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.divisor .divisor-derecha p {
+  margin-top: -150px;
+  width: 33vw;
+  margin-bottom: 0px;
+  color: rgb(78, 78, 78);
+}
+.divisor .divisor-derecha .btn-interno {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 10px;
+  margin-top: -90px;
+  margin-left: -1px;
+  height: 50px;
+  width: 145px;
+}
+.divisor .divisor-derecha .btn-interno:hover {
+  cursor: pointer;
+  transition: 0.4s all;
+  background-color: darkgray;
+}
+
+@media (max-width: 1200px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav #contenidos-generales {
+    display: none;
+  }
+  nav .icono {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  nav .contenidos-expandibles {
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 630px;
+  }
+  .barra-navegadora .imagen-logo {
+    position: absolute;
+    left: 10px;
+  }
+  .barra-navegadora .contenidos-expandibles {
+    display: none;
+  }
+  .divisor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1450px) {
+  .divisor {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 800px;
+  }
+  .divisor .foto-1 {
+    padding: 5px;
+  }
+  .divisor .cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+  }
+  .divisor .cuadro .foto-1 {
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+  .divisor .divisor-derecha {
+    background-color: #2b95ff;
+    margin-top: 100px;
+    height: 0px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding: auto;
+    justify-content: space-around;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .divisor .divisor-derecha p {
+    width: 80vw;
+    color: #5b5b5b;
+    margin-top: -10px;
+  }
+  .divisor .divisor-derecha h1 {
+    width: 80vw;
+    font-family: Inter, sans-serif;
+    font-size: 2rem;
+    margin: 15px;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .divisor .divisor-derecha h1 #multicolor {
+    background: linear-gradient(to right, #4defa7, #2b95ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .divisor .divisor-derecha .btn-interno {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: -1px;
+    width: 126px;
+    height: 5rem;
+  }
+  .divisor .divisor-derecha .btn-interno:hover {
+    cursor: pointer;
+    transition: 0.4s all;
+    background-color: darkgray;
+  }
+}/*# sourceMappingURL=style.css.map */

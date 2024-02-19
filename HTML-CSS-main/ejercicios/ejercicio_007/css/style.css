@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&display=swap");
+
+body {
+  font-family: DM Sans;
+  background-color: #383838;
+  color: white;
+}
+.general {
+  margin: 0 auto;
+  width: 40%;
+}
+hr {
+  width: 40%;
+  height: 1px;
+  background-color: white;
+}
+.or {
+  display: flex;
+  align-items: center;
+}
+
+.google_letra {
+  margin-right: 30px;
+  padding: 3px;
+  height: 32px;
+}
+button.google_botton {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5195ee;
+  color: white;
+  font-family: DM Sans;
+  padding: 10px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.google_botton:hover {
+  background-color: #0f75fb;
+}
+.twitter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 25px;
+  height: 40px;
+  width: 40px;
+}
+.imagen_twitter {
+  margin-top: -3px;
+  height: 42px;
+}
+
+input {
+  color: white;
+  height: 30px;
+  width: 85%;
+  border: solid white;
+  border-radius: 5px;
+  background-color: #454545;
+}
+p {
+  margin: 0;
+}
+input:hover {
+  border: solid grey;
+  background-color: #454045;
+}
+.create_acount {
+  border: none;
+  padding: 13px 40px;
+  border-radius: 10px;
+  background-color: #f082ac;
+  color: white;
+}
+
+.checkline {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  transform: scale(0.8);
+}
+.checkline p {
+  font-size: smaller;
+  height: 80%;
+  padding: 15px;
+}
+.create_acount:hover {
+  background-color: #eba8c2;
+  cursor: pointer;
+}
+.pointer {
+  display: flex;
+  cursor: pointer;
+}
+.ordenador {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.ordenador input {
+  margin: 10px;
+}
+.encolumna {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.encolumna p {
+  padding-bottom: 10px;
+}
+.nueva {
+  width: 110%;
+}

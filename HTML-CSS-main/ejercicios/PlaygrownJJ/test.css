@@ -1,0 +1,128 @@
+body {
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(162, 162, 252);
+}
+
+.padre {
+  padding: 10px;
+  background-color: aqua;
+}
+.hijo-1,
+.hijo-2,
+.hijo-3 {
+  margin: 10px;
+  border: solid 1px rgb(21, 12, 12);
+  border-radius: 5px;
+  background-color: red;
+  color: blue;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+}
+.hijo-1:hover,
+.hijo-2:hover,
+.hijo-3:hover {
+  background-color: beige;
+  border: solid 1px white;
+  transform: translateX(-3px) translateY(-2px);
+  box-shadow: 0 0 10px rgb(0, 21, 255);
+}
+
+.hijo-menor {
+  height: 15rem;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+button {
+  background-color: #7fffd4;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  height: 40px;
+}
+button:hover {
+  background-color: rgb(0, 197, 75);
+  transform: translateX(-3px) translateY(-2px);
+}
+.nuevo-hijo {
+  display: flex;
+  flex-direction: column;
+}
+
+.pantalla {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid 1px white;
+  background-color: white;
+  width: 400px;
+  border: solid 2px white;
+}
+
+.principal {
+  width: 100%;
+  height: 248px;
+  margin-bottom: -4px;
+}
+.boton:hover {
+  box-shadow: 0 0 10px #ffffff;
+}
+#diurno,
+#nocturno {
+  height: auto;
+}
+@media (max-width: 532px) {
+  .padre {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-around;
+  }
+  .hijo-1,
+  .hijo-2 .hijo-3 {
+    margin: 10px;
+    border: solid 1px rgb(21, 12, 12);
+    border-radius: 5px;
+    background-color: red;
+    color: blue;
+    padding: 10px;
+  }
+  .hijo-2,
+  .hijo-1,
+  .hijo-3 {
+    font-size: small;
+  }
+
+  .hijo-1:hover,
+  .hijo-2:hover,
+  .hijo-3:hover {
+    background-color: beige;
+  }
+
+  .hijo-menor {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .nuevo-hijo {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .pantalla {
+    justify-content: center;
+    width: 90%;
+    border: solid 1px white;
+  }
+  .boton {
+    font-size: x-small;
+    height: 35px;
+  }
+  .boton:hover {
+    box-shadow: 0 0 10px #ffffff;
+  }
+}

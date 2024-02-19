@@ -1,0 +1,91 @@
+body{
+    min-height: 100%;
+    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/870/449/products/madera-pastel1-5e79e99fd645fbbdea16189420696614-1024-1024.jpg");
+
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.general{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.primero,
+.segundo,
+.tercero,
+.cuarto,
+.quinto {
+  background-color: wheat;
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  border: solid;
+  color: grey
+  
+}
+
+.primero,.segundo{
+    margin-top: 0.5%
+}
+
+.cuarto,.quinto{
+    margin-bottom: -1%;
+}
+.tercero {
+  background-color: wheat;
+  width: 200px;
+  height: 200px;
+  
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+ 
+}
+
+.linea-uno,
+.linea-dos,
+.linea-tres {
+  display: flex;
+  justify-content: space-around;
+}
+.barra{
+   width: 10rem;
+}
+
+.grosor{
+    margin: 10%;
+   
+    width: 80%;
+    height:95% ;
+   
+}
+.blanco,.negro,.verde,.rojo,.azul{
+    display: flex;
+    height: 19.39%;
+    width: 100%;
+    }
+.blanco{
+    width: 95.5%;
+    border: solid;
+    background-color: white;
+}
+.negro{
+    background-color: black;
+    }
+    .rojo{
+        background-color: red;
+    }
+    .azul{
+        background-color: blue;
+    }
+    .verde{
+        background-color: green;
+    }
+
+    .principal{
+        width: 100%;
+    }
